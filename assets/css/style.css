@@ -1,0 +1,117 @@
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 1.13rem;
+  text-transform: uppercase;
+}
+
+/* UTILITY */
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+
+/* MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN */
+.container {
+  width: 90%;
+  max-width: 1455px;
+  margin: 110px auto;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+  width: 465px;
+  min-width: 250px;
+  margin: 10px 10px 40px;
+}
+
+/* CARD TOP */
+.card-top {
+  position: relative;
+}
+
+.card-top img {
+  width: 100%;
+}
+
+.card-top .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.card-top:hover .hover-img {
+  z-index: 2;
+}
+
+.card-top .heart {
+  width: 53px;
+  line-height: 53px;
+  text-align: center;
+  color: black;
+  font-size: 2.3rem;
+  background-color: white;
+
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 3;
+}
+
+.card-top .item-characteristics {
+  color: white;
+  font-size: .87rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  bottom: 48px;
+  z-index: 3;
+}
+
+.item-characteristics .discount,
+.item-characteristics .sustainability {
+  padding: 6px 11px;
+}
+
+.item-characteristics .discount {
+  background-color: red;
+  margin-right: 4px;
+}
+
+.item-characteristics .sustainability {
+  background-color: #008000;
+}
+
+/* CARD BOTTOM */
+.card-bottom .brand,
+.card-bottom .prices {
+  color: #71716F;
+  font-size: .87rem;
+  font-weight: bold;
+}
+
+.card-bottom .prices {
+  font-size: .93rem;
+}
+
+.card-bottom .prices .current-price {
+  color: red;
+}
+
+.card-bottom .prices .original-price {
+  text-decoration: line-through ;
+}
